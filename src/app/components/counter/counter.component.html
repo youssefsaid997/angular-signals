@@ -1,0 +1,14 @@
+<div class="container d-flex justify-content-md-around   ">
+    <app-button
+    [className]="'btn btn-secondary px-3 mt-2'"
+    [value]="'Add'"
+    (click)="increment()"
+    
+    ></app-button>
+    <h3>{{ count() }}</h3>
+    <app-button
+      [className]="'btn btn-danger px-3 mt-2'"
+      [value]="'Subtract'"
+      (click)="decrement()"
+    ></app-button>
+  </div>

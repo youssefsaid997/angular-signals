@@ -1,0 +1,5 @@
+<div class="d-flex gap-2 " *ngFor="let product of products()">
+
+    <app-card [product]="product" (delete)="deleteProduct(product.id)"></app-card>
+</div>
+
